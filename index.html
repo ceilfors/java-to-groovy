@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Java to Groovy</title>
+
+		<meta name="description" content="Java to Groovy">
+		<meta name="author" content="Wisen Tanasa">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Java to Groovy</h1>
+                    <h3>Introducing Groovy to Java Developers</h3>
+					<p>
+						<small>Created by <a href="http://ceilfors.com">Wisen Tanasa</a> / <a href="http://twitter.com/ceilfors">@ceilfors</a></small>
+					</p>
+				</section>
+
+                <section>
+                    <h2>Disclaimer</h2>
+                    <ul>
+                        <li class="fragment">Heavy user of Groovy for ~2 years</li>
+                        <li class="fragment">Contributed to Jenkins plugins which are in Groovy</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Why Groovy?</h2>
+                    <p>From <a href="http://groovy.codehaus.org/">Groovy home page</a> ..</p>
+                    <ul>
+                        <li class="fragment">seamlessly integrates with all existing Java classes and libraries</li>
+                        <li class="fragment">makes modern programming features available to Java developers with almost-zero learning curve</li>
+                        <li class="fragment">increases developer productivity by reducing scaffolding code when developing web, GUI, database or console applications</li>
+                    </ul>
+                </section>
+				<section>
+					<h2>Where do I start?</h2>
+				</section>
+				<section>
+					<section>
+						<h2>Mixing Java and Groovy</h2>
+						<ul>
+							<li>POJO</li>
+							<li>Test</li>
+							<li>Script</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Bonus</h2>
+						<ul>
+							<li>Spock framework</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Built-in cool API and libraries</h2>
+						<ul>
+							<li>File</li>
+							<li>XmlSlurper</li>
+							<li>JsonSlurper</li>
+							<li>CliBuilder</li>
+						</ul>
+					</section>
+					<section>
+						<h2>External dependencies</h2>
+						<ul>
+							<li>http-builder</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2>Performance</h2>
+					<p>Groovy 2.0 + JDK 7 invokedynamic</p>
+					<p>Groovy 2.2 @CompileStatic</p>
+				</section>
+				<section style="text-align: left;">
+					<h1>Thank You</h1>
+					<p>
+						<a href="https://github.com/ceilfors/reveal.js">Source code &amp; slides</a>
+					</p>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
