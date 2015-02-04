@@ -27,5 +27,9 @@ public class MainJava {
         person3.setName("Jane");
         person3.setAddress(address);
         persons.add(person3);
+
+        for (PersonJava person : persons) {
+            System.out.println(person.getName() + " lives in " + person.getAddress().getCountryName());
+        }
     }
 }
